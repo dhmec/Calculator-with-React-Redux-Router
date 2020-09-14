@@ -1,0 +1,46 @@
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    background-color: rgba(161, 55, 55, .9);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    background-color: rgb(46, 102, 139);
+  }
+  label {
+    font-size: 25px;
+    margin: 2px 30px;
+    font-weight: bold;
+    color: #f2f5f5;
+  }
+  input[type=text], select {
+    padding: 5px;  
+    margin: 5px 30px;
+    font-size: 20px;
+  }
+  
+  input[type=submit] {
+    background-color: seagreen;
+    margin-top: 20px;
+    padding: 5px 0;
+    height: 6vh;
+    color: #f2f5f5; 
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+  
+  div p {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+  }
