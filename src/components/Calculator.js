@@ -14,13 +14,29 @@ const Calculator = (props) => {
   // submit event function
   const displayCalculate = (event) => {
     event.preventDefault();
-    selectOpearator();
+    if(isNumber()){
+        
+        alert('please enter number only!');
+    }
+    else
+    {
+        selectOpearator();
+    }
     //props.dispatch( newPastCalculate( detailedResult ) );
   };
 
+  // Check input validity
+  const isNumber = () => {
+      if(isNaN(firstInput) || isNaN(secondInput))
+      {
+        return true;
+      } 
+      return false;
+    }
 
   // select operator
   const selectOpearator = () => {
+
     if (newOption === "addition") {
       setResult(firstInputNumber + secondInputNumber);
       setDetailedResult(
