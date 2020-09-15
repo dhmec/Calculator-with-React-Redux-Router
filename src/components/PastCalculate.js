@@ -1,19 +1,17 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from "react";
+import { connect } from "react-redux";
 
-
-
-const PastCalculateList = ( props ) =>
-{
+const PastCalculateList = (props) => {
   return (
     <>
       <h2>Past Calculate List</h2>
       <ul>
-        {props.listItems.map( ( item, index ) => <li key={index}>{item.task}</li> )}
+        {props.listItems.slice(1).map((item, index) => (
+          <li key={index}>{item.task}</li>
+        ))}
       </ul>
     </>
   );
-}
+};
 
-
-export default connect( state => ( { listItems: state } ) )( PastCalculateList );
+export default connect((state) => ({ listItems: state }))(PastCalculateList);

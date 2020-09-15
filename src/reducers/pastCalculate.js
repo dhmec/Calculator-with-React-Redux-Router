@@ -7,7 +7,8 @@ const pastCalculateReducer = ( state = [], action ) => {
                 task:action.payload
             };
             const newPastList = [...state];
-            newPastList.push( detailedResult );
+            newPastList.push( detailedResult );            
+           
             return newPastList;
 
         default:
