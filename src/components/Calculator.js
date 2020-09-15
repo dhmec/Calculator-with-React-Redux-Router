@@ -8,6 +8,7 @@ const Calculator = props => {
     const [secondInput, setSecondInput] = useState( '' );
     const [newOption, setNewOption] = useState( 'addition' );
     const [result, setResult]= useState( '' );
+    const [detailedResult, setDetailedResult] = useState ( '' );
     const firstInputNumber = parseFloat(firstInput);
     const secondInputNumber = parseFloat(secondInput);
     
@@ -24,18 +25,22 @@ const Calculator = props => {
         if (newOption ==='addition')
         {
             setResult(firstInputNumber + secondInputNumber);            
+            setDetailedResult(`${firstInputNumber}+${secondInputNumber}=${firstInputNumber + secondInputNumber}`);            
         }
         else if (newOption === 'substraction')
         {
-            setResult(firstInputNumber - secondInputNumber);            
+            setResult(firstInputNumber - secondInputNumber);
+            setDetailedResult(`${firstInputNumber}-${secondInputNumber}=${firstInputNumber - secondInputNumber}`);            
         }
         else if (newOption === 'multiplication')
         {
-            setResult(firstInputNumber * secondInputNumber);            
+            setResult(firstInputNumber * secondInputNumber);
+            setDetailedResult(`${firstInputNumber}*${secondInputNumber}=${firstInputNumber * secondInputNumber}`);            
         }
         else 
         {
-            setResult(firstInputNumber / secondInputNumber);            
+            setResult(firstInputNumber / secondInputNumber); 
+            setDetailedResult(`${firstInputNumber}/${secondInputNumber}=${firstInputNumber / secondInputNumber}`);           
         }
     } 
     
@@ -70,6 +75,7 @@ const Calculator = props => {
                 <input type='submit' value="Calculate!" />
             </form>
             <p>Result : {result} </p>
+            <p>Detailed Result : {detailedResult} </p>
         </div>
       
     );
