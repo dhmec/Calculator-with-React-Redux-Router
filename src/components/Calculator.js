@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import newPastCalculate from '../actions/pastCalculate';
 
 
 const Calculator = props => {
@@ -17,7 +19,8 @@ const Calculator = props => {
     // submit event function
     const displayCalculate  = event => {
         event.preventDefault();       
-        selectOpearator();                
+        selectOpearator(); 
+        props.dispatch( newPastCalculate( detailedResult ) );               
     } 
     // select operator
     const selectOpearator = () => 
@@ -81,4 +84,4 @@ const Calculator = props => {
     );
 }
   
-export default Calculator
+export default connect( state => { return { toDos: state } })( Calculator );

@@ -3,11 +3,11 @@
 const pastCalculateReducer = ( state = [], action ) => {
     switch ( action.type ) {
         case 'PAST_CALCULATE':
-            const newTask = {
+            const detailedResult = {
                 task:action.payload
             };
             const newPastList = [...state];
-            newPastList.push( newTask );
+            newPastList.push( detailedResult );
             return newPastList;
 
         default:

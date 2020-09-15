@@ -5,8 +5,8 @@ import './components/Calculator.css';
 import Calculator from './components/Calculator';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import newPastCalculate from './actions/pastCalculate';
 import pastCalculateReducer from './reducers/pastCalculate';
+import PastCalculateList from './components/PastCalculate'
 
 
 const store = createStore(
@@ -14,12 +14,13 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-store.dispatch( newPastCalculate( "first result" ) );
+
 
 
 ReactDOM.render(
   <Provider store={store}>
-    <Calculator />    
+    <Calculator />
+    <PastCalculateList />    
   </Provider>,
   document.getElementById('root')
 );
