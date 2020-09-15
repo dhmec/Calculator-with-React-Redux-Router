@@ -77,11 +77,10 @@ const Calculator = props => {
 
                 <input type='submit' value="Calculate!" />
             </form>
-            <p>Result : {result} </p>
-            <p>Detailed Result : {detailedResult} </p>
+            <p>Result : {result} </p>            
         </div>
       
     );
 }
   
-export default connect( state => { return { toDos: state } })( Calculator );
+export default connect( state => { return { listItems: state } })( Calculator );

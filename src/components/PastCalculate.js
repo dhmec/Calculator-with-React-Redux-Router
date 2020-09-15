@@ -9,11 +9,11 @@ const PastCalculateList = ( props ) =>
     <>
       <h2>Past Calculate List</h2>
       <ul>
-        {props.toDos.map( ( toDo, index ) => <li key={index}>{toDo.task}</li> )}
+        {props.listItems.map( ( item, index ) => <li key={index}>{item.task}</li> )}
       </ul>
     </>
   );
 }
 
-// Use connect to make our "To-Do list" available via props.toDos.
-export default connect( state => ( { toDos: state } ) )( PastCalculateList );
+
+export default connect( state => ( { listItems: state } ) )( PastCalculateList );
