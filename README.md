@@ -1,3 +1,23 @@
+# React-Redux Assignment - Calculator
+#### This assignment is meant to challenge your knowledge of state, prop and element rendering in React while also using a store in redux to store information. React is currently one of the most popular and sought after front end technology at the moment, and having skills with it will greatly increase your employability. Redux is often used as a companion to React, and is favoured for storing (global) information over using local component state. 
+
+
+
+
+
+
+
+## Trello Link : https://trello.com/b/WFYF3145/react-practice-calculator-with-prop
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +86,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
