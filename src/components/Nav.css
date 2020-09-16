@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(53, 59, 59);
+    line-height: 8vh;
+    width: 100%;
+}
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: bold;
+    color: #f2f5f5;
+}

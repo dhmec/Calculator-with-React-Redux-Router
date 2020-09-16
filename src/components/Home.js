@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css';
 
 
 function Home()
@@ -12,6 +13,7 @@ function Home()
             <ol>
                 <li>Go to Calculator at the top</li>
                 <li>Enter Numeric value in input1</li>
+                <li>Select any Mathematical Operation</li>
                 <li>Enter Numeric value in input2</li>
                 <li>Click or hit Enter key from the keyboard</li>
                 <li>See the Result</li>

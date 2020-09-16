@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { connect, useDispatch } from "react-redux";
 import newPastCalculate from "../actions/pastCalculate";
+import './Calculator.css';
 
 const Calculator = (props) => {
   const [firstInput, setFirstInput] = useState("");
@@ -86,8 +87,8 @@ const Calculator = (props) => {
 
   //Retrun(JSX)
   return (
-    <div>
-      <h1>Welcome to my Calculator!</h1>
+    <div className="calculator">
+      <h1>Calculator!</h1>
       <form onSubmit={displayCalculate}>
         <label htmlFor="firstInput">Input 1:</label>
         <input
