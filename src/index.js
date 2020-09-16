@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import pastCalculateReducer from './reducers/pastCalculate';
 import PastCalculateList from './components/PastCalculate'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Nav from './components/Nav';
 
 
 const store = createStore(
