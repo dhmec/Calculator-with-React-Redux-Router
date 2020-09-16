@@ -7,6 +7,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import pastCalculateReducer from './reducers/pastCalculate';
 import PastCalculateList from './components/PastCalculate'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 const store = createStore(
@@ -19,8 +20,11 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <Calculator />
-    <PastCalculateList />    
+    <Router>
+      <Nav />
+      <Route path = '/calculator' component = { Calculator } />
+      <Route path = '/past-calculate' component = { PastCalculateList } />                
+    </Router>        
   </Provider>,
   document.getElementById('root')
 );

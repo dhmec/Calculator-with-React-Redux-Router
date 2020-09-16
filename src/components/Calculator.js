@@ -22,7 +22,7 @@ const Calculator = (props) => {
     {
         selectOpearator();
     }
-    //props.dispatch( newPastCalculate( detailedResult ) );
+    
   };
 
   // Check input validity
