@@ -6,11 +6,10 @@ import { Link } from 'react-router-dom';
 const Nav = () => 
 {
     return(
-        <nav>
-            <h1>Welcome to my Calculator made with React-Redux-Router</h1>
+        <nav>            
             <ul>
                 <li>
-                    <Link>
+                    <Link to = '/'>
                         HOME
                     </Link>
                 </li>
