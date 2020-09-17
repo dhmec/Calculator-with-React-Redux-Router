@@ -21,3 +21,14 @@ nav ul a {
     font-weight: bold;
     color: #f2f5f5;
 }
+@media screen and (min-width: 760px) {
+    nav {
+        line-height: 11vh;
+    }
+        
+    nav ul a {
+        font-size: 1.5rem;
+        
+    }
+}
+
